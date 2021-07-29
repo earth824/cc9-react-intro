@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // const h1 = React.createElement(
+      //   'h1',
+      //   {
+      //     id: 'header',
+      //     className: 'header',
+      //     style: { color: 'blue', fontSize: '40px' }
+      //   },
+      //   'Hello World'
+      // ); // <h1 id="header" class="header" style="color: red; font-size: 32px">Hello World</h1>
+      // const p = React.createElement('p', { style: { color: 'red' } }, 'Intro to React Lesson');
+      // const div = React.createElement('div', { className: 'container' }, h1, p);
+      // ReactDOM.render(div, document.getElementById('root'));
+
+      // Lab 1.1
+      // const div = React.createElement(
+      //   'div',
+      //   {},
+      //   React.createElement('h1', {}, 'Hello my friend'),
+      //   React.createElement('p', {}, 'Friend list'),
+      //   React.createElement(
+      //     'ul',
+      //     {},
+      //     React.createElement('li', {}, 'John'),
+      //     React.createElement('li', {}, 'Jack'),
+      //     React.createElement('li', {}, 'Jane')
+      //   )
+      // );
+
+      // ReactDOM.render(div, document.getElementById('root'));
+
+      const div = (
+        <div>
+          <h1>Hello My Friend</h1>
+          <p>Friend List</p>
+          <ul>
+            {/* <li>John</li> */}
+            <li>Jack</li>
+            <li>Jane</li>
+          </ul>
+        </div>
+      );
+
+      ReactDOM.render(div, document.getElementById('root'));
+    </script>
+  </body>
+</html>
